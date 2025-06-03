@@ -243,6 +243,7 @@ header {
      border: 1px solid #302f2f;
      border-radius: 10px;
      padding: 16px;
+     box-shadow: 0 10px 40px 5px rgba(0, 0, 0, 1)
 }
 
 .face-container img{
@@ -276,6 +277,7 @@ header {
     max-width: 1100px;
     margin: auto;
     margin-top: 30px;
+    margin-bottom: 30px;
 }
 .single-feature2{
     border: 1px solid #302f2f;
@@ -286,4 +288,39 @@ header {
     display: flex;
     justify-content: center;
     align-items: end;
+}
+.use-section{
+    margin-top: 100px;
+    margin-bottom: 80px;
+}
+.use-section-parrent{
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:30px;
+}
+.single-use-section{
+     border: 1px solid #302f2f;
+     border-radius: 10px;
+     padding: 16px;
+     box-shadow: 0 10px 40px 5px rgba(0, 0, 0, 1)
+}
+
+.single-use-img{
+     display: flex;
+     justify-content: center;
+     
+}
+.single-use-section p {
+    color: #999999;
+    font-size: 12px;
+}
+.single-use-section h6 {
+    color: #999999;
+    font-size: 16px;
+    margin: 0;
+}
+.single-use-section h3 {
+    color: white;
 }
