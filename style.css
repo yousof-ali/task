@@ -347,3 +347,108 @@ header {
 .logo-container img{
     max-width: 250px;
 }
+.faqs-section{
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.accordion {
+  border: 1px solid #302f2f;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+  border-radius: 6px;
+  background-color: rgba(24, 24, 26, 0.1);
+  margin: 20px auto;
+  max-width: 800px;
+  overflow: hidden;
+}
+
+.accordion-title {
+  padding: 16px;
+  font-weight: 600;
+  font-size: 25px;
+  cursor: pointer;
+  position: relative;
+  color: white;
+  background-color: rgba(24, 24, 26, 0.1);
+}
+
+.accordion-title::after {
+  content: "+";
+  position: absolute;
+  right: 20px;
+  font-size: 20px;
+  transition: transform 0.3s ease;
+}
+
+.accordion.active .accordion-title::after {
+  transform: rotate(90deg);
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 16px;
+  background-color: rgba(24, 24, 26, 0.1);
+  color:#999999;
+  font-size: 18px;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+.accordion.active .accordion-content {
+  max-height: 200px;
+  padding: 16px;
+}
+.for-gap{
+    margin-top: 40px;
+}
+
+.ready-section{
+    max-width: 900px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    position: relative;
+    
+}
+.ready-section h2{
+    font-family: 'Orbitron', sans-serif;
+    color: white;
+    font-size: 50px;
+    text-align: left;
+    margin: 0;
+    margin-top: 50px;
+    background: linear-gradient(170deg,
+            #292929 4%,
+            #FFFFFF 32%,
+            #676767 55%,
+            #FFFFFF 73%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.ready-input{
+    border: 1px solid #424242;
+  display: flex;
+  padding: 4px;
+  background-color: #121213;
+  border-radius: 6px;
+  max-width: 350px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  margin-top: 20px;
+  right: 0;
+  justify-content: space-between;
+  align-items: center;
+}
+.useremail2{
+     background: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 10px;
+  flex: 1;
+  font-size: 14px;
+}
