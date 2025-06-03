@@ -452,3 +452,36 @@ header {
   flex: 1;
   font-size: 14px;
 }
+footer{
+    font-family: 'Orbitron', sans-serif;
+    color: #DEDEDE;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    max-width: 1300px;
+    margin: auto;
+    margin-top: 100px;
+    padding-bottom: 20px;
+}
+footer a{
+    color: #DEDEDE;
+    text-decoration: none;
+    margin-right: 12px;
+}
+.all-link{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+.social-link{
+    display: flex;
+    gap: 8px;
+}
+.social-link img{
+    width: 20px;
+    cursor: pointer;
+}
+.social-link p {
+    margin: 0;
+}
