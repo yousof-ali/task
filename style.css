@@ -1,5 +1,5 @@
 body {
-    background: #0b0d11;
+    background: #1f1f21;
 
     margin: auto;
 }
@@ -184,12 +184,13 @@ header {
     margin: auto;
     margin-top: 120px;
     max-width: 1200px;
-    background-color: rgba(18, 18, 19, 0.5);
+    background-color: rgba(24, 24, 26, 0.1);
+
     backdrop-filter: blur(8px);
     padding: 12px;
     border: 1px solid #302f2f;
     border-radius: 8px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.7);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
     padding-bottom: 30px;
 
 }
@@ -243,7 +244,7 @@ header {
      border: 1px solid #302f2f;
      border-radius: 10px;
      padding: 16px;
-     box-shadow: 0 10px 40px 5px rgba(0, 0, 0, 1)
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
 }
 
 .face-container img{
@@ -283,6 +284,7 @@ header {
     border: 1px solid #302f2f;
      border-radius: 10px;
      padding: 16px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
 }
 .text-img-container{
     display: flex;
@@ -298,13 +300,13 @@ header {
     margin: auto;
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    gap:30px;
+    gap:40px;
 }
 .single-use-section{
      border: 1px solid #302f2f;
      border-radius: 10px;
      padding: 16px;
-     box-shadow: 0 10px 40px 5px rgba(0, 0, 0, 1)
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
 }
 
 .single-use-img{
@@ -327,7 +329,7 @@ header {
 .logo-container{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    gap: 20px;
+    gap: 30px;
     max-width: 1100px;
     margin: auto;
     margin-top: 50px;
@@ -339,6 +341,8 @@ header {
      display: flex;
      justify-content: center;
      justify-items: center;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+
 }
 .logo-container img{
     max-width: 250px;
