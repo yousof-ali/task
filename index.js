@@ -9,3 +9,7 @@ document.querySelectorAll('.accordion').forEach(item => {
     item.classList.toggle('active');
   });
 });
+
+function toggleFAQ(faqItem) {
+  faqItem.classList.toggle("active");
+}
