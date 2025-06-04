@@ -187,6 +187,8 @@ header {
     border-radius: 100px;
     margin: auto;
     margin-top: -20px;
+    position: relative;
+    z-index: 5;
 }
 
 .meet-section {
@@ -660,14 +662,18 @@ footer a {
         margin: 0;
         margin-top: 12px;
     }
-
+     
+    .banner-heading {
+    display: flex;
+    padding: 8px;
+}
     .banner-des {
-        font-size: 16px;
-        margin: 0px
+        font-size: 12px;
+        margin: 0px 2px;
     }
 
     .xp-join {
-        margin-top: 15px;
+        margin-top: 25px;
     }
 
     .join-container {
