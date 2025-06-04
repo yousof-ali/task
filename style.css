@@ -31,9 +31,12 @@ header {
     margin: auto;
     border-radius: 29px;
     border: 1px solid #999999;
+    background-color: rgba(70, 70, 73, 0.13);
+    backdrop-filter: blur(2px);
     padding: 20px;
     padding-bottom: 40px;
     position: relative;
+    z-index: 2;
 }
 
 .content-div {
@@ -48,6 +51,13 @@ header {
     display: flex;
     padding: 20px;
 }
+
+.banner {
+    position: relative;
+    max-width: 1200px;
+    margin: auto;
+}
+
 
 .banner-text {
     font-family: 'Orbitron', sans-serif;
@@ -407,7 +417,7 @@ header {
 .accordion.active .accordion-title::after {
     transform: rotate(45deg);
     color: red;
-    
+
 }
 
 .accordion-content {
@@ -574,7 +584,7 @@ footer a {
     aspect-ratio: 1 / 1;
     position: absolute;
     background-color: #103c41de;
-    bottom: 90px;
+    bottom: 120px;
     left: -100px;
     clip-path: polygon(50% 0%,
             93% 25%,
@@ -587,6 +597,7 @@ footer a {
     justify-content: center;
     align-items: center;
     rotate: -30deg;
+    z-index: 1;
 }
 
 .hexagon2 span {
@@ -605,15 +616,21 @@ footer a {
 
 
 @media (min-width:0px) and (max-width: 500px) {
+    .banner {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
     .outer-div {
         height: 350px;
         margin-left: 20px;
         margin-right: 20px;
     }
+
     .banner-footer {
-    margin-left: 5px;
-    margin-right: 5px;
-}
+        margin-left: 5px;
+        margin-right: 5px;
+    }
 
 
     .lvl-text {
@@ -773,20 +790,27 @@ footer a {
     .hexagon2 span {
         font-size: 1em;
     }
-    .accordion-grid{
+
+    .accordion-grid {
         margin-left: 20px;
         margin-right: 20px;
     }
-    .accordion-title{
+
+    .accordion-title {
         font-size: 16px;
     }
-    .accordion-content{
+
+    .accordion-content {
         font-size: 14px;
     }
 
 }
 
 @media (min-width:501px) and (max-width:700px) {
+      .banner {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
     .outer-div {
         height: 450px;
         margin-left: 40px;
@@ -898,7 +922,7 @@ footer a {
     }
 
     .hexagon1 {
-        width: 120px;
+        width: 100px;
         top: 20px;
         right: -10px;
 
@@ -909,9 +933,9 @@ footer a {
     }
 
     .hexagon2 {
-        width: 120px;
-        bottom: 60px;
-        left: -40px;
+        width: 100px;
+        bottom: 100px;
+        left: 0px;
 
     }
 
@@ -919,14 +943,16 @@ footer a {
         font-size: 25px;
     }
 
-    .accordion-grid{
+    .accordion-grid {
         margin-left: 20px;
         margin-right: 20px;
     }
-    .accordion-title{
+
+    .accordion-title {
         font-size: 18px;
     }
-    .accordion-content{
+
+    .accordion-content {
         font-size: 16px;
     }
 
@@ -934,6 +960,10 @@ footer a {
 }
 
 @media (min-width:701px) and (max-width:1000px) {
+    .banner {
+        padding-left: 26px;
+        padding-right: 26px;
+    }
 
     .outer-div {
         margin: auto 60px;
@@ -1008,31 +1038,33 @@ footer a {
     }
 
     .hexagon1 {
-        width: 150px;
-        top: 20px;
+        width: 130px;
+        top:90px;
         right: -10px;
 
     }
 
     .hexagon2 {
-        width: 150px;
-        bottom: 100px;
-        left: -60px;
+        width: 130px;
+        bottom: 120px;
+        left: 10px;
 
     }
 
     .hexagon2 span {
         font-size: 30px;
     }
-    
-    .accordion-grid{
+
+    .accordion-grid {
         margin-left: 20px;
         margin-right: 20px;
     }
-    .accordion-title{
+
+    .accordion-title {
         font-size: 22px;
     }
-    .accordion-content{
+
+    .accordion-content {
         font-size: 18px;
     }
 
@@ -1069,5 +1101,16 @@ footer a {
 
     .logo-container img {
         max-width: 180px;
+    }
+
+    .banner {
+        padding-left: 26px;
+        padding-right: 26px;
+    }
+     .hexagon2 {
+        width: 200px;
+        bottom: 120px;
+        left: 15px;
+
     }
 }
