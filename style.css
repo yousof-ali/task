@@ -404,7 +404,9 @@ header {
 }
 
 .accordion.active .accordion-title::after {
-    transform: rotate(90deg);
+    transform: rotate(45deg);
+    color: red;
+    
 }
 
 .accordion-content {
@@ -762,6 +764,16 @@ footer a {
     .hexagon2 span {
         font-size: 1em;
     }
+    .accordion-grid{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .accordion-title{
+        font-size: 16px;
+    }
+    .accordion-content{
+        font-size: 14px;
+    }
 
 }
 
@@ -898,6 +910,17 @@ footer a {
         font-size: 25px;
     }
 
+    .accordion-grid{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .accordion-title{
+        font-size: 18px;
+    }
+    .accordion-content{
+        font-size: 16px;
+    }
+
 
 }
 
@@ -992,34 +1015,50 @@ footer a {
     .hexagon2 span {
         font-size: 30px;
     }
-
-    @media (min-width:1001px) and (max-width:1250px) {
-        .outer-div {
-            margin: auto 120px;
-            padding: 20px;
-            padding-bottom: 40px;
-        }
-
-        .banner-des {
-            margin: 0px;
-
-        }
-        .use-section-parrent {
-            margin: 0px 60px;
-        }
-        .meet-section {
-            margin-top: 40px;
-            margin-left: 120px;
-            margin-right: 120px;
-            padding: 0px;
-            padding-bottom: 30px;
-        }
-        .logo-container {
-            margin: 0 20px;
-        }
-        .logo-container img {
-            max-width: 180px;
-        }
+    
+    .accordion-grid{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .accordion-title{
+        font-size: 22px;
+    }
+    .accordion-content{
+        font-size: 18px;
     }
 
+
+}
+
+@media (min-width:1001px) and (max-width:1250px) {
+    .outer-div {
+        margin: auto 120px;
+        padding: 20px;
+        padding-bottom: 40px;
+    }
+
+    .banner-des {
+        margin: 0px;
+
+    }
+
+    .use-section-parrent {
+        margin: 0px 60px;
+    }
+
+    .meet-section {
+        margin-top: 40px;
+        margin-left: 120px;
+        margin-right: 120px;
+        padding: 0px;
+        padding-bottom: 30px;
+    }
+
+    .logo-container {
+        margin: 0 20px;
+    }
+
+    .logo-container img {
+        max-width: 180px;
+    }
 }
