@@ -3,6 +3,8 @@ body {
     width: 100%;
     margin: auto;
     overflow-x: hidden;
+    position: relative;
+    background: #1f1f21;
 }
 
 header {
@@ -12,6 +14,38 @@ header {
     padding: 20px 10px;
     max-width: 1600px;
     margin: auto;
+}
+body::before {
+  content: "";
+  position: fixed; 
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: 
+    linear-gradient(
+      90deg, 
+      transparent calc(20% - 1px), 
+      #302f2f79 20%, 
+      #302f2f79 calc(20% + 1px), 
+      transparent calc(20% + 1px),
+      transparent calc(40% - 1px),
+
+      #302f2f79 40%, 
+      #302f2f79 calc(40% + 1px), 
+      transparent calc(40% + 1px),
+      transparent calc(60% - 1px),
+
+      #302f2f79 60%,
+      #302f2f79 calc(60% + 1px),
+      transparent calc(60% + 1px),
+      transparent calc(80% - 1px),
+      #302f2f79 80%,
+      #302f2f79 calc(80% + 1px),
+      transparent calc(80% + 1px)
+    );
+  pointer-events: none;
+  z-index: -1;
 }
 
 .launch-btn {
@@ -32,7 +66,7 @@ header {
     border-radius: 29px;
     border: 1px solid #999999;
     background-color: rgba(70, 70, 73, 0.13);
-    backdrop-filter: blur(2px);
+    backdrop-filter: blur(8px);
     padding: 20px;
     padding-bottom: 40px;
     position: relative;
@@ -330,6 +364,8 @@ header {
     border-radius: 10px;
     padding: 16px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+    background-color: rgba(70, 70, 73, 0.13);
+    backdrop-filter: blur(8px);
 }
 
 .single-use-img {
@@ -392,7 +428,8 @@ header {
     border: 1px solid #302f2f;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
     border-radius: 6px;
-    background-color: rgba(24, 24, 26, 0.1);
+    background-color: rgba(70, 70, 73, 0.13);
+    backdrop-filter: blur(8px);
     margin: 20px auto;
     max-width: 800px;
     overflow: hidden;
@@ -662,11 +699,12 @@ footer a {
         margin: 0;
         margin-top: 12px;
     }
-     
+
     .banner-heading {
-    display: flex;
-    padding: 8px;
-}
+        display: flex;
+        padding: 8px;
+    }
+
     .banner-des {
         font-size: 12px;
         margin: 0px 2px;
@@ -813,10 +851,11 @@ footer a {
 }
 
 @media (min-width:501px) and (max-width:700px) {
-      .banner {
+    .banner {
         padding-left: 16px;
         padding-right: 16px;
     }
+
     .outer-div {
         height: 450px;
         margin-left: 40px;
@@ -1045,7 +1084,7 @@ footer a {
 
     .hexagon1 {
         width: 130px;
-        top:90px;
+        top: 90px;
         right: -10px;
 
     }
@@ -1113,7 +1152,8 @@ footer a {
         padding-left: 26px;
         padding-right: 26px;
     }
-     .hexagon2 {
+
+    .hexagon2 {
         width: 200px;
         bottom: 120px;
         left: 15px;
