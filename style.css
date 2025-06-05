@@ -1,20 +1,13 @@
 body {
     background: #1f1f21;
-    width: 100%;
+    /* width: 100%; */
     margin: auto;
     overflow-x: hidden;
     position: relative;
     background: #1f1f21;
 }
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 10px;
-    max-width: 1600px;
-    margin: auto;
-}
+
 body::before {
   content: "";
   position: fixed; 
@@ -58,6 +51,14 @@ body::before {
     font-weight: bold;
 }
 
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10px;
+    max-width: 1600px;
+    margin: auto;
+}
 
 .outer-div {
     max-width: 1155px;
